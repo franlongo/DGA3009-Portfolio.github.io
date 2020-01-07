@@ -1,0 +1,265 @@
+/* fonts */
+
+@font-face {
+    font-family: meroche;
+    src: url(fonts/MEROCHE.ttf), url(fonts/MEROCHE.woff), url(fonts/MEROCHE.woff2);
+}
+
+/* common elements */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #FBF8EF;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+@media only screen and (min-width: 766px) {
+    h2 {
+        font-size: 100px;
+        line-height: 0.95;
+    }
+}
+
+h1, h2 {
+    font-family: meroche;
+}
+
+h1, h2, p, a {
+    color: #191919;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.header-space {
+    height: 68px;
+}
+
+.side-title {
+    display: none;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    transform: rotate(270deg) translateX(-128px);
+    transform-origin: top left;
+    padding: 20px;
+}
+
+.side-title h1 {
+    font-size: 100px;
+}
+
+@media only screen and (min-width: 766px) {
+    .side-title {
+        display: block;
+    }
+}
+
+/* Content */
+
+.content .images .image {
+    padding: 5px;
+}
+
+.content img, #work img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Navbar */
+
+.navbar {
+    padding: 0;
+}
+
+.navbar, .navbar-collapse {
+    background-color: #FBF8EF;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: transparent;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-size: 60%;
+}
+
+#navbarSupportedContent {
+    background-color: rgba(211, 211, 211, 0.9);
+    padding: 10px 15px;
+}
+
+#navbarSupportedContent ul li {
+    line-height: 1;
+    padding: 5px;
+}
+
+#navbarSupportedContent ul li a {
+    font-size: 10px;
+    transition: all 0.2s;
+}
+
+#navbarSupportedContent ul li a:hover {
+    text-decoration: none;
+    color: #191919;
+    margin-left: 3px;
+    transition: all 0.2s;
+}
+
+/* Navbar larger screens */
+
+@media only screen and (min-width: 766px) {
+    .navbar {
+        padding: 10px;
+    }
+    #navbarSupportedContent {
+        padding: 0px 20px;
+        background-color: #FBF8EF;
+    }
+    #navbarSupportedContent ul li {
+        padding: 0px;
+    }
+}
+
+/* Sections */
+
+/* Cover */
+
+#cover {
+    background: #FBF8EF;
+    padding: 10px;
+    height: 510px;
+}
+
+@media only screen and (min-width: 766px) {
+    #cover {
+        padding: 10px 50px;
+        height: 700px;
+    }
+}
+
+#cover h2 {
+    font-size: 40px;
+}
+
+@media only screen and (min-width: 766px) {
+    #cover h2 {
+        font-size: 120px;
+    }
+}
+
+/* About */
+
+#about {
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#about .images {
+    margin-top: -430px;
+}
+
+#aboutImage {
+    height: 250px;
+    min-width: 250px;
+    width: 250px;
+    background-image: url(2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 0.8s;
+    margin-bottom: 1rem;
+}
+
+#aboutImage:hover {
+    background-image: url(1.png);
+    transition: all 0.8s;
+}
+
+#about .info {
+    margin-top: 0px;
+}
+
+@media only screen and (min-width: 766px) {
+    #about .info {
+        margin-top: 50px;
+    }
+}
+
+/* Work */
+
+#work {
+    padding: 50px 0;
+}
+
+#work a.card {
+    border: none;
+    box-shadow: 0px 6px 20px 0px rgba(211, 211, 211, 0.5);
+    color: #191919;
+    margin-bottom: 15px;
+    transition: all 0.2s;
+}
+
+#work a.card:hover {
+    text-decoration: none;
+    margin-top: -5px;
+    transition: all 0.2s;
+}
+
+#work .card, #work .card img {
+    border-radius: 0;
+}
+
+#work .card .wrapper {
+    padding: 15px 15px 0 15px;
+}
+
+#work .card .card-title {
+    text-align: center;
+}
+
+/* Work Sections */
+
+.work-section {
+    height: 100vh;
+    padding-top: 70px;
+}
+
+/* Contact */
+
+#contact {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    box-shadow: 0px 6px 20px 0px rgba(211, 211, 211, 0.5);
+}
+
+#contact h2 {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#contact .form-control {
+    border: none;
+}
+
+#contact .btn {
+    background-color: white;
+    color: #191919;
+}
+
+#contact .form-control:focus, #contact .btn:focus {
+    box-shadow: none;
+}
+
+#contact .social a:hover {
+    opacity: 0.8;
+}

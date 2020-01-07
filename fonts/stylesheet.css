@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'MEROCHE';
+    src: url('MEROCHE.woff2') format('woff2'),
+        url('MEROCHE.woff') format('woff'),
+        url('MEROCHE.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
