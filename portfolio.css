@@ -16,7 +16,7 @@ body {
 }
 
 h2 {
-    font-size: 35px;
+    font-size: 45px;
 }
 
 @media only screen and (min-width: 766px) {
@@ -28,6 +28,16 @@ h2 {
 
 h1, h2 {
     font-family: meroche;
+}
+
+p {
+    font-size: 12px;
+}
+
+@media only screen and (min-width: 766px) {
+    p {
+        font-size: 16px;
+    }
 }
 
 h1, h2, p, a {
@@ -94,8 +104,9 @@ ul {
 }
 
 #navbarSupportedContent {
-    background-color: rgba(211, 211, 211, 0.9);
+    background-color: #FBF8EF;
     padding: 10px 15px;
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.05);
 }
 
 #navbarSupportedContent ul li {
@@ -124,6 +135,7 @@ ul {
     #navbarSupportedContent {
         padding: 0px 20px;
         background-color: #FBF8EF;
+        box-shadow: none;
     }
     #navbarSupportedContent ul li {
         padding: 0px;
@@ -145,10 +157,6 @@ ul {
         padding: 10px 50px;
         height: 700px;
     }
-}
-
-#cover h2 {
-    font-size: 40px;
 }
 
 @media only screen and (min-width: 766px) {
@@ -192,14 +200,20 @@ ul {
 
 @media only screen and (min-width: 766px) {
     #about .info {
-        margin-top: 50px;
+        margin-top: 70px;
     }
 }
 
 /* Work */
 
-#work {
-    padding: 50px 0;
+@media only screen and (min-width: 766px) {
+    #about .info {
+        padding: 100px 0;
+    }
+}
+
+#work .title {
+    margin-bottom: 80px;
 }
 
 #work a.card {
@@ -208,6 +222,13 @@ ul {
     color: #191919;
     margin-bottom: 15px;
     transition: all 0.2s;
+    margin: 20px 25px;
+}
+
+@media only screen and (min-width: 766px) {
+    #work a.card {
+        margin: 0px;
+    }
 }
 
 #work a.card:hover {
@@ -238,13 +259,13 @@ ul {
 /* Contact */
 
 #contact {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    box-shadow: 0px 6px 20px 0px rgba(211, 211, 211, 0.5);
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 
 #contact h2 {
     font-family: 'Josefin Sans', sans-serif;
+    font-size: 62px;
 }
 
 #contact .form-control {
