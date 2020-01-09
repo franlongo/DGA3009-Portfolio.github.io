@@ -1,11 +1,7 @@
-/* fonts */
-
 @font-face {
     font-family: meroche;
     src: url(fonts/MEROCHE.ttf), url(fonts/MEROCHE.woff), url(fonts/MEROCHE.woff2);
 }
-
-/* common elements */
 
 html {
     scroll-behavior: smooth;
@@ -15,33 +11,20 @@ body {
     background-color: #FBF8EF;
 }
 
-h2 {
-    font-size: 45px;
-}
-
-@media only screen and (min-width: 766px) {
-    h2 {
-        font-size: 100px;
-        line-height: 0.95;
-    }
+h1, h2, p, a {
+    color: #191919;
 }
 
 h1, h2 {
     font-family: meroche;
 }
 
+h2 {
+    font-size: 45px;
+}
+
 p {
     font-size: 12px;
-}
-
-@media only screen and (min-width: 766px) {
-    p {
-        font-size: 16px;
-    }
-}
-
-h1, h2, p, a {
-    color: #191919;
 }
 
 ul {
@@ -52,26 +35,6 @@ ul {
 
 .header-space {
     height: 68px;
-}
-
-.side-title {
-    display: none;
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
-    transform: rotate(270deg) translateX(-128px);
-    transform-origin: top left;
-    padding: 20px;
-}
-
-.side-title h1 {
-    font-size: 100px;
-}
-
-@media only screen and (min-width: 766px) {
-    .side-title {
-        display: block;
-    }
 }
 
 /* Content */
@@ -126,24 +89,6 @@ ul {
     transition: all 0.2s;
 }
 
-/* Navbar larger screens */
-
-@media only screen and (min-width: 766px) {
-    .navbar {
-        padding: 10px;
-    }
-    #navbarSupportedContent {
-        padding: 0px 20px;
-        background-color: #FBF8EF;
-        box-shadow: none;
-    }
-    #navbarSupportedContent ul li {
-        padding: 0px;
-    }
-}
-
-/* Sections */
-
 /* Cover */
 
 #cover {
@@ -152,20 +97,21 @@ ul {
     height: 510px;
 }
 
-@media only screen and (min-width: 766px) {
-    #cover {
-        padding: 10px 50px;
-        height: 700px;
-    }
-}
-
-@media only screen and (min-width: 766px) {
-    #cover h2 {
-        font-size: 120px;
-    }
-}
-
 /* About */
+
+.side-title {
+    display: none;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    transform: rotate(270deg) translateX(-128px);
+    transform-origin: top left;
+    padding: 20px;
+}
+
+.side-title h1 {
+    font-size: 100px;
+}
 
 #about {
     position: relative;
@@ -182,7 +128,7 @@ ul {
     height: 300px;
     min-width: 300px;
     width: 300px;
-    background-image: url(2.png);
+    background-image: url(img/2.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -191,7 +137,7 @@ ul {
 }
 
 #aboutImage:hover {
-    background-image: url(1.png);
+    background-image: url(img/1.png);
     transition: all 0.8s;
 }
 
@@ -199,19 +145,7 @@ ul {
     margin-top: 0px;
 }
 
-@media only screen and (min-width: 766px) {
-    #about .info {
-        margin-top: 70px;
-    }
-}
-
 /* collections */
-
-@media only screen and (min-width: 766px) {
-    #collections {
-        padding: 100px 0;
-    }
-}
 
 #collections .title {
     margin-bottom: 80px;
@@ -224,13 +158,6 @@ ul {
     margin-bottom: 15px;
     transition: all 0.2s;
     margin: 20px 25px;
-}
-
-@media only screen and (min-width: 766px) {
-    #collections a.card {
-        margin: 0px;
-        margin-bottom: 20px
-    }
 }
 
 #collections a.card:hover {
@@ -251,13 +178,6 @@ ul {
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 25px;
-}
-
-/* collections Sections */
-
-.collections-section {
-    height: 100vh;
-    padding-top: 70px;
 }
 
 /* Contact */
@@ -291,4 +211,90 @@ ul {
 
 /* works */
 
-#works .carousel-inner {}
+#works {
+    padding: 20px 0;
+}
+
+#works .title {
+    margin-bottom: 20px;
+}
+
+#works .info {
+    margin-bottom: 20px;
+}
+
+#works .carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+#works .carousel-control-next-icon, #works .carousel-control-prev-icon {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    background-size: 60%;
+}
+
+/* footer */
+
+.footer p {
+    color: #D8C7B6;
+}
+
+/* for larger screens */
+
+@media only screen and (min-width: 766px) {
+    h2 {
+        font-size: 100px;
+        line-height: 0.95;
+    }
+    p {
+        font-size: 16px;
+    }
+    .navbar {
+        padding: 10px;
+    }
+    #navbarSupportedContent {
+        padding: 0px 20px;
+        background-color: #FBF8EF;
+        box-shadow: none;
+    }
+    #navbarSupportedContent ul li {
+        padding: 0px;
+    }
+    #cover {
+        padding: 10px 50px;
+        height: 700px;
+    }
+    #cover h2 {
+        font-size: 120px;
+    }
+    .side-title {
+        display: block;
+    }
+    #about .info {
+        margin-top: 70px;
+    }
+    #collections {
+        padding: 100px 0;
+    }
+    #collections a.card {
+        margin: 0px;
+        margin-bottom: 20px
+    }
+    #works {
+        padding: 50px 0;
+    }
+    #works .title {
+        margin-bottom: 50px;
+    }
+    #works .title h1 {
+        font-size: 120px;
+    }
+    #works .info {
+        margin-bottom: 20px;
+    }
+    #works .carousel-item img {
+        width: auto;
+        height: 500px;
+    }
+}
