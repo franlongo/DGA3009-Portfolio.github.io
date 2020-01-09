@@ -133,7 +133,8 @@ ul {
     background-repeat: no-repeat;
     background-position: center;
     transition: all 0.8s;
-    margin-bottom: 1rem;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 #aboutImage:hover {
@@ -162,8 +163,6 @@ ul {
 
 #collections a.card:hover {
     text-decoration: none;
-    margin-top: -5px;
-    transition: all 0.2s;
 }
 
 #collections .card, #collections .card img {
@@ -274,12 +273,19 @@ ul {
     #about .info {
         margin-top: 70px;
     }
+    #aboutImage {
+        margin-top: 0;
+    }
     #collections {
         padding: 100px 0;
     }
     #collections a.card {
         margin: 0px;
         margin-bottom: 20px
+    }
+    #collections a.card:hover {
+        margin-top: -5px;
+        transition: all 0.2s;
     }
     #works {
         padding: 50px 0;
