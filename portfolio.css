@@ -146,6 +146,10 @@ ul {
     margin-top: 0px;
 }
 
+#about .info a {
+    text-decoration: underline;
+}
+
 /* collections */
 
 #collections .title {
@@ -269,9 +273,6 @@ ul {
     }
     .side-title {
         display: block;
-    }
-    #about .info {
-        margin-top: 70px;
     }
     #aboutImage {
         margin-top: 0;
