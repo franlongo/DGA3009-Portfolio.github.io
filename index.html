@@ -9,20 +9,17 @@
     <!-- Required meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <!-- portfolio css -->
+    
+        <!-- portfolio css -->
     <link rel="stylesheet" href="portfolio.css">
 
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:600,700&display=swap" rel="stylesheet">
 
-    <!-- References -->
-    <!-- bootstrap components taken from bootstrap documentation: https://getbootstrap.com/docs/4.4/ -->
-
+   
 </head>
 
 <body>
@@ -65,27 +62,21 @@
         <div class="side-title">
             <h1>ABOUT</h1>
         </div>
- <div
-    data-aos="fade-up"
-    data-aos-offset="200"
-    data-aos-delay="50"
+
         <div class="container">
             <div class="row">
                 <div class="col-1 d-none d-md-block">
                 </div>
                 <div class="col-12 col-md-11 content">
- <div
-    data-aos="fade-up"
-    data-aos-delay="50">
+
                     <div class="images d-flex">
-                        <div class="image w-50">
+                        <div class="image w-50" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
                             <img src="img/illustrationplant.png" alt="illustration plant">
                         </div>
-                        <div class="image w-50">
+                        <div class="image w-50" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
                             <img src="img/Illustration1.png" alt="illustration faces">
                         </div>
-                    </div>
-                    </div>
+                </div>
                     <div class="d-md-none py-4 text-center">
                         <h2>ABOUT</h2>
                     </div>
@@ -138,7 +129,7 @@
                 </div>
 
 
-                <div class="col-12 col-md-6 col-lg-3">
+                <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up"  data-aos-duration="1000">
                     <a href="illustration.html" class="card">
                         <div class="wrapper">
                             <img src="img/illustration.png" class="card-img-top" alt="illustration">
@@ -149,7 +140,7 @@
                     </a>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-3">
+                <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up"  data-aos-duration="1000">
                     <a href="digital-arts.html" class="card">
                         <div class="wrapper">
                             <img src="img/graphic.png" class="card-img-top" alt="graphic">
@@ -159,7 +150,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3">
+                <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up"  data-aos-duration="1000">
                     <a href="fine-arts.html" class="card">
                         <div class="wrapper">
                             <img src="img/fineart.png" class="card-img-top" alt="fineart">
@@ -169,7 +160,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3">
+                <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="1000">
                     <a href="commisions.html" class="card">
                         <div class="wrapper">
                             <img src="img/commission.png" class="card-img-top" alt="commission">
@@ -239,6 +230,12 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>    
+        <script>
+        AOS.init({
+            once:true
+        });
+      </script>
 </body>
 
 </html>
